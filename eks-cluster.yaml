@@ -19,6 +19,7 @@ vpc:
         id: "subnet-0a5e7f70400f35f5e"
 managedNodeGroups:
   - name: k8s-voting-nodes
+    ami: ami-0f7abd12e02335c8d
     overrideBootstrapCommand: |
       #!/bin/bash
       /etc/eks/bootstrap.sh k8s-voting-cluster
